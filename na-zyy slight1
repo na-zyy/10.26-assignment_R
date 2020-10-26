@@ -1,0 +1,87 @@
+#slight1
+
+1:5 + 6:10
+c(1,3,6,10,17) + c(0,2,3,5,6)
+sum(1:5)
+median(1:5)
+mean(1:9)
+
+sum(1,2,3,4,5)
+median(1,2,3,4,5)
+mean(1,2,3,4,5)
+mean(2,3,2,3)
+
+c(2,3,4,5,8,9,13)-2
+
+-2:2 * -2:2
+1:10 / 3
+
+abs(-9)
+abs(10)
+sqrt(9)
+
+log(10)
+log10(10)
+log(100,10)
+log10(100)
+1.23e5
+identical(2^3,2**3)
+
+pi
+sin(30)
+sin(1)
+sin(pi/6)
+sin(pi/2)
+cos(c(0,pi/4,pi/2,pi))
+round(3.1415926,3)   #四舍五入
+floor(3.14159)   #向下取整
+ceiling(3.1415926)    #向上取整
+trunc(3,1415926)      #去除小数部分
+factorial(9)     #阶乘
+exp(pi * 1i) + 1  #欧拉公式
+factorial(7) + factorial(1) - 71^2
+choose(5,0:5)   #二次项系数
+
+
+c(3,4-1,1+1+1) == 3
+1:3 != 3:1
+exp(1:5)<100
+(1:5) ^ 2 >= 16
+
+
+sqrt(2)^2 == 2
+sqrt(2) ^ 2 -2
+all.equal(sqrt(2)^2,2)
+
+all.equal(sqrt(2) ^ 2 , 3)#要检查两个数字是否一样，不要使用==，而使用all.equal函数
+isTRUE(all.equal(sqrt(2) ^ 2 , 3))
+
+c("Can","you","can","b","little","able") == "can"
+c("A","B","C","D") < "C"
+c('a','b','c','d')<'C'
+
+x<- 5:10
+y = 2:7
+x+2*y-3
+
+
+c(Inf+1,Inf-1,Inf-Inf)
+c(1/Inf,Inf/1,Inf/Inf)
+c(sqrt(Inf),sin(Inf))
+c(log(Inf),log(Inf,Inf))
+c(NA+1,NA*5,NA+Inf)
+
+c(NA+NA,NaN+NaN,NaN+NA,NA+NaN)
+
+x3 <- c(0,Inf,-Inf,NaN,NA)
+is.finite(x3)
+is.infinite(x3)
+is.nan(x3)
+is.na(x3)
+
+x4 <- 1:10 >= 5
+!x4
+y4 <- 1:10%%2 == 0 #%%表示取整
+x4|y4
+x4&y4
+
