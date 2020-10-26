@@ -1,0 +1,64 @@
+#test_R
+
+atan(1/1:100) #slight1 练习1(1)
+
+x <- c(1:1000)
+atan(1/x)
+y <- atan(1/x)
+y
+q <- 1/(tan(y))
+z <- q
+z  #slight1 练习1(2)
+
+x == z
+identical(x,z)
+all.equal(x,z)  
+x -> a
+a -> z
+all.equal(x,z)
+all.equal(x,z,0)
+isTRUE(x==z)
+isTRUE(identical(x,z))
+isTRUE(all.equal(x,z))   
+isTRUE(all.equal(x,z,0))  #slight1 练习2
+
+true_and_missing <- any(TRUE,NA)
+false_and_missing <- any(FALSE,NA)
+mixed <- any(TRUE,FALSE,NA)
+
+true_and_missing <- all(TRUE,NA)
+false_and_missing <- all(FALSE,NA)
+mixed <- all(TRUE,FALSE,NA) #slight1 练习3
+
+class(Inf)
+class(NA)
+class(NaN)
+class("")
+typeof(Inf)
+typeof(NA)
+typeof(NaN)
+typeof(")
+mode(Inf)
+mode(NA)
+mode(NaN)
+mode(") 
+is.numeric(Inf)
+is.character(NA)
+is.integer(NaN)
+is.character("")
+
+
+pet_name <- factor(sample(c("dog","cat","hamster","goldfish"),1000,replace = TRUE))
+pet_name
+summary(pet_name)
+
+tomato <- 1
+celery <- TRUE
+asparagus <- 9
+cucumber <- "vegetable"
+ls()
+ls(pattern = "a")
+
+
+
+
