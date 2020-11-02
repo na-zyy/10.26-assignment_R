@@ -1,0 +1,12 @@
+#04_TEST
+n<-seq_len(20)
+triangle_number<-n*(n+1)/2
+triangle_number
+names(triangle_number)<-letters[1:20]
+triangle_number
+triangle_number[c("a","e","i","o")]
+
+
+na_matrix<-c(11:0)
+diag(na_matrix)
+
