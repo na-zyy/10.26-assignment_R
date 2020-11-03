@@ -1,0 +1,35 @@
+#05_TEST
+(num_sqrt= matrix(
+  0:99,
+  nrow = 10,
+  ncol = 10,
+  byrow = TRUE
+  )
+)  #先将0:99做成矩阵，再利用apply函数（函数是网上查资料出来的）
+(list =  apply(num_sqrt,MARGIN = 1,function(num_sqrt)
+   {num_sqrt[round(sqrt(num_sqrt))^2==num_sqrt]})
+)
+
+#apply(X, MARGIN, FUN)
+# -x: 一个数组或者矩阵
+#-MARGIN: 两种数值1或者2决定对哪一个维度进行函数计算
+#-MARGIN=1`: 操作基于行
+#-MARGIN=2`: 操作基于列
+#-MARGIN=c(1,2): 对行和列都进行操作
+#-FUN: 使用哪种操作，内置的函数有mean、medium、sum、min、max
+
+
+iris
+(a_data_frame<-data.frame(iris[1:4]))
+colMeans(a_data_frame)
+
+
+
+beaver1
+beaver2
+k1<-data.frame(beaver1,id=1)
+k2<-data.frame(beaver2,id=2)
+k3<-rbind(k1,k2)
+k3
+k4_activ_beaver<-subset(k3,as.logical(activ))
+k4_activ_beaver
